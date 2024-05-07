@@ -61,7 +61,7 @@ const splitDocs = await textSplitter.splitDocuments(data);
 const vectorStore = await MemoryVectorStore.fromDocuments(splitDocs, new TensorFlowEmbeddings());
 ```
 
-To connect the datastore to a question asked to a LLM, we need to use the concept at the heart of **LangChain**: the chain. Chains are a way to connect a number of activities together to accomplish a particular tasks. There are a number of chain types available, but for this tutorial we are using the **RetrievalQAChain**.
+To connect the datastore to a question asked to a LLM, we need to use the concept at the heart of **LangChain**: the chain. Chains are a way to connect a number of activities together to accomplish a particular task. There are a number of chain types available, but for this tutorial we are using the **RetrievalQAChain**.
 
 ```javascript
 import { RetrievalQAChain } from "langchain/chains";
